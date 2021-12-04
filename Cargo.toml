@@ -9,3 +9,5 @@ edition = "2021"
 [dependencies]
 clap = "3.0.0-beta.5"
 enum_dispatch = "0.3.7"
+strum = { version = "0.23", features = ["derive"] }
+strum_macros = "0.23"
