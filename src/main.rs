@@ -4,6 +4,7 @@ use commands::{day0::Day0, CommandImpl, DynError};
 use commands::{day1a::Day1a};
 use commands::{day1b::Day1b};
 use commands::{day2a::Day2a};
+use commands::{day2b::Day2b};
 use enum_dispatch::enum_dispatch;
 
 use clap::Parser;
@@ -21,6 +22,7 @@ enum SubCommand {
     Day1a(Day1a),
     Day1b(Day1b),
     Day2a(Day2a),
+    Day2b(Day2b),
 }
 fn main() -> Result<(), DynError> {
     let opts = Opts::parse();
